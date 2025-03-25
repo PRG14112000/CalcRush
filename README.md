@@ -47,7 +47,7 @@ This project is fully responsive and works on:
 ## 📥 How to Use?
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-github-username/math-quiz-game.git
+   git clone https://github.com/PRG14112000/CalcRush.git
    ```
 2. Open `index.html` in your browser.
 
