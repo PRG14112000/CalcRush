@@ -11,10 +11,43 @@ function generateProblem() {
         num1 = Math.floor(Math.random() * 9000) + 1000;
         num2 = Math.floor(Math.random() * 900) + 100;
     } else {
-        num1 = Math.floor(Math.random() * 90) + 10; // 2-digit numbers
-        num2 = Math.floor(Math.random() * 90) + 10;
+        // Multiplication cases
+        const specialMultiplications = [
+            [11, 12], [12, 13], [13, 14], [14, 15], // Consecutive numbers
+            [12, 14], [8, 12], [13, 15], [14, 16], [15, 17], // Even-distance numbers
+            [24, 5], [68, 5], [23, 5], [67, 5], // Multiples of 5
+            [35, 65], [75, 85], // Numbers ending with 5
+            [12, 24], [24, 48], [21, 42], // Number multiplied by its double
+            [37, 21], [37, 12], [37, 24], // Multiples of 37
+            [24, 15], [48, 15] // Multiples of 15
+        ];
+
+        if (Math.random() < 0.5) {
+            // 50% chance to select a special multiplication case
+            [num1, num2] = specialMultiplications[Math.floor(Math.random() * specialMultiplications.length)];
+        } else {
+            // Otherwise, use normal random numbers
+            num1 = Math.floor(Math.random() * 90) + 10; // 2-digit numbers
+            num2 = Math.floor(Math.random() * 90) + 10;
+        }
     }
 }
+
+// function generateProblem() {
+//     const operations = ['+', '-', '*'];
+//     operation = operations[Math.floor(Math.random() * operations.length)];
+
+//     if (operation === '+') {
+//         num1 = Math.floor(Math.random() * 900) + 100; // 3-digit number
+//         num2 = Math.floor(Math.random() * 9000) + 1000; // 4-digit number
+//     } else if (operation === '-') {
+//         num1 = Math.floor(Math.random() * 9000) + 1000;
+//         num2 = Math.floor(Math.random() * 900) + 100;
+//     } else {
+//         num1 = Math.floor(Math.random() * 90) + 10; // 2-digit numbers
+//         num2 = Math.floor(Math.random() * 90) + 10;
+//     }
+// }
 
 function calculateAnswer(n1, op, n2) {
     switch (op) {
