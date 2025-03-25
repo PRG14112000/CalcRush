@@ -42,7 +42,7 @@ This project is fully responsive and works on:
 ```
 
 ## 🎮 Live Demo
-[🔗 Play the Math Quiz Game](https://your-github-username.github.io/math-quiz-game)
+[🔗 Play the Math Quiz Game](https://prg14112000.github.io/CalcRush/)
 
 ## 📥 How to Use?
 1. Clone the repository:
