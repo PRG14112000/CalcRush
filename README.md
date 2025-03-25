@@ -38,7 +38,7 @@ This project is fully responsive and works on:
 📁 Math Quiz Game
  ┣ 📜 index.html      # Main HTML file
  ┣ 📜 style.css       # Styling and animations
- ┗ 📜 script.js       # Game logic
+ ┗ 📜 backend.js       # Game logic
 ```
 
 ## 🎮 Live Demo
