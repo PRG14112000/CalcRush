@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container fade">
+        <h2>Math Quiz</h2>
+        <p id="question">Press "Start" to begin</p>
+        <input type="number" id="answer" placeholder="Your Answer" disabled oninput="autoCheckAnswer()">
+        <button id="startButton" onclick="startQuiz()">Start</button>
+        <p id="message"></p>
+        <p id="timer"></p>
+        <p id="score">Score: 0</p>
+    </div>
+
+    <script src="backend.js"></script>
+</body>
+</html>
